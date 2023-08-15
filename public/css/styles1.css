@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    outline: none;
+}
+body{
+    background-color: rgb(194, 45, 45);
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    background-color: white;
+    padding: 20px;
+    display: block;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.heading{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    color:rgb(194, 45, 45);
+    letter-spacing: 1px;
+}
+.container form .data{
+    margin: 20px 0;
+    width: 100%;
+
+}
+.container form .data input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    background:none;
+    border: 1px solid rgb(199, 193, 193);
+    margin-top: 10px;
+    padding: 10px;
+
+}
+.container form .data input:focus{
+    border: 2px solid rgb(194, 45, 45);
+}
+.container form .data label{
+    font-size: 16px;
+    font-weight: 400;
+}
+.container form .forget-pass a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+.container form .forget-pass{
+    margin-top: -4px;
+    margin-bottom: 15px;
+}
+.container form .forget-pass a:hover{
+    text-decoration: underline;
+}
+.container form .btn{
+    margin: 10px 0;
+}
+.container form .btn button{
+    width: 100%;
+    height: 37px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(194, 45, 45);
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin: 5px 0;
+}
+.signup{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+.signup a{
+    text-decoration: none;
+}
+.signup a:hover{
+    text-decoration: underline;
+}
+.error{
+    color: red;
+    font-weight: 800;
+    text-align: center;
+}
+.good{
+    color: green;
+    font-weight: 800;
+    text-align: center;
+}
+.logout{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    float:right;
+}
