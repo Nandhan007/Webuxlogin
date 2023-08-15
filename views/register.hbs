@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="/css/styles1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">Register</div>
+        {{#if msg}}
+        <p class={{msg_type}}>{{msg}}</p>
+        {{/if}}
+        <form action="/auth/register" method="post">
+            <div class="data">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+            </div>
+        <div class="data">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+        </div>
+        <div class="data">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+        </div>
+        <div class="data">
+            <label for="confirm_password">Confirm Password</label>
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Enter your Confirm Password" required>
+        </div>
+        <div class="btn">
+            <button type="submit">Register</button>
+        </div>
+    </form>
+        <div class="signup">Already a member? <a href="/">Login now</a></div>
+    </div>
+</body>
+</html>

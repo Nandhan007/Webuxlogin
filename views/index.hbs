@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginPage</title>
+    <link rel="stylesheet" href="/css/styles1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">User Login</div>
+        {{#if msg}}
+        <p class={{msg_type}}>{{msg}}</p>
+        {{/if}}
+        <form action="/auth/login" method="post">
+        <div class="data">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Name">
+        </div>
+        <div class="data">
+            <label for="pass">Password</label>
+            <input type="password" id="pass" name="password" placeholder="Enter your Password">
+        </div>
+        <div class="forget-pass">
+            <a href="/forget">Forget Password?</a>
+        </div>
+        <div class="btn">
+            <button type="submit">Login</button>
+        </div>
+    </form>
+        <div class="signup">Not a member? <a href="/register">Signup now</a></div>
+    </div>
+</body>
+</html>
